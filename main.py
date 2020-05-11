@@ -15,7 +15,7 @@ with webdriver.Firefox() as driver:
     first_result.click()
     driver.find_element(By.CSS_SELECTOR, 'body').send_keys('F')
     skip_ad = wait.until(presence_of_element_located((By.CSS_SELECTOR, ".ytp-ad-skip-button")))
-    time.sleep(5)
+    time.sleep(5.5)
     skip_ad.click()
 
     wait.until(presence_of_element_located((By.CSS_SELECTOR, "#movie_player.ended_mode")))
