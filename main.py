@@ -38,7 +38,7 @@ class YLauncher:
 		skip_ad_element.click()
 
 def main(argv):
-	username = "PassiveAggressions"
+	username = "CHANNEL_NAME"
 
 	try:
 		opts, args = getopt.getopt(argv,"hu:",["username="])
